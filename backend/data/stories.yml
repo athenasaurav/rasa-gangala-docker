@@ -1,0 +1,62 @@
+version: "2.0"
+
+stories:
+
+
+- story: arts_and_entertainment
+  steps:
+  - or:
+    - intent: Accommodation_Services
+    - intent: Agricultural_Machinery_and_Supplies
+    - intent: Arts_and_Entertainment
+    - intent: Automotive
+    - intent: B2B
+    - intent: Business_Services
+    - intent: City_Attractions
+    - intent: Clinics_and_Doctors
+    - intent: Clothing_and_Accessories_Shops
+    - intent: Coaching_Tution_and_Training
+    - intent: Colleges_and_Universities
+    - intent: Community_and_Social_Services
+    - intent: Computer_Courses_and_Training
+    - intent: Computers_and_Mobiles
+    - intent: Computers_and_Telecommunication_Services
+    - intent: Education_and_Training_Centres
+    - intent: Educational_Supplies_Dealers
+    - intent: Emergency_Services
+    - intent: Financial_Services
+    - intent: Food_and_Dining
+    - intent: Funerals_and_Memorials
+    - intent: Games_Centers
+    - intent: Garden_and_Lawn
+    - intent: Government_Offices
+    - intent: Grocery
+    - intent: Health_Services
+    - intent: Home_Accessories_and_Decors
+    - intent: Home_Construction_and_Renovation
+    - intent: Home_Decoration_and_Furniture
+    - intent: Home_Essential_Utilities
+    - intent: Home_Maintenance_and_Services
+    - intent: Home_Products_and_Services
+    - intent: Hospitals_and_Medical_Centers
+    - intent: Laboratories
+    - intent: Legal_Service
+    - intent: Medicine
+    - intent: Nightlife
+    - intent: Office_Renovation
+    - intent: Online_Computer_Courses_and_Training
+    - intent: Outdoor_Decoration_and_Furniture_Dealers
+    - intent: Parties_Special_Occasions_and_Wedding
+    - intent: Personal_Care_and_Services
+    - intent: Pet_and_Pets_Care
+    - intent: Retail_Shopping
+    - intent: Schools
+    - intent: Sports
+    - intent: Travel_Logistics_and_Transportation
+  - action: action_AllInOne
+
+
+- story: nlu_fallback
+  steps:
+  - intent: nlu_fallback
+  - action: action_nlu_fallback

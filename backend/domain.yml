@@ -1,0 +1,620 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - Accommodation_Services
+  - Agricultural_Machinery_and_Supplies
+  - Arts_and_Entertainment
+  - Automotive
+  - B2B
+  - Business_Services
+  - City_Attractions
+  - Clinics_and_Doctors
+  - Clothing_and_Accessories_Shops
+  - Coaching_Tution_and_Training
+  - Colleges_and_Universities
+  - Community_and_Social_Services
+  - Computer_Courses_and_Training
+  - Computers_and_Mobiles
+  - Computers_and_Telecommunication_Services
+  - Education_and_Training_Centres
+  - Educational_Supplies_Dealers
+  - Emergency_Services
+  - Financial_Services
+  - Food_and_Dining
+  - Funerals_and_Memorials
+  - Games_Centers
+  - Garden_and_Lawn
+  - Government_Offices
+  - Grocery
+  - Health_Services
+  - Home_Accessories_and_Decors
+  - Home_Construction_and_Renovation
+  - Home_Decoration_and_Furniture
+  - Home_Essential_Utilities
+  - Home_Maintenance_and_Services
+  - Home_Products_and_Services
+  - Hospitals_and_Medical_Centers
+  - Laboratories
+  - Legal_Service
+  - Medicine
+  - Nightlife
+  - Office_Renovation
+  - Online_Computer_Courses_and_Training
+  - Outdoor_Decoration_and_Furniture_Dealers
+  - Parties_Special_Occasions_and_Wedding
+  - Personal_Care_and_Services
+  - Pet_and_Pets_Care
+  - Retail_Shopping
+  - Schools
+  - Sports
+  - Travel_Logistics_and_Transportation
+  - Accommodation_Services_Hotel
+  - general_form
+  - Travel_Logistics_and_Transportation_Transport_Agency
+  - Travel_Logistics_and_Transportation_Transport_Service
+  - Accommodation_Services_Hotels
+  - Accommodation_Services_Kids_Hostels
+  - Accommodation_Services_Mens_Hostel
+  - Accommodation_Services_Paying_Guests
+  - Accommodation_Services_Real_Estate
+
+entities:
+  - Arts_and_Entertainment
+  - dummy
+  - Accommodation_Services
+  - Agricultural_Machinery_and_Supplies
+  - Automotive
+  - B2B
+  - Business_Services
+  - City_Attractions
+  - Clinics_and_Doctors
+  - Clothing_and_Accessories_Shops
+  - Coaching_Tution_and_Training
+  - Colleges_and_Universities
+  - Community_and_Social_Services
+  - Computer_Courses_and_Training
+  - Computers_and_Mobiles
+  - Computers_and_Telecommunication_Services
+  - Education_and_Training_Centres
+  - Educational_Supplies_Dealers
+  - Emergency_Services
+  - Financial_Services
+  - Food_and_Dining
+  - Funerals_and_Memorials
+  - Games_Centers
+  - Garden_and_Lawn
+  - Government_Offices
+  - Grocery
+  - Health_Services
+  - Home_Accessories_and_Decors
+  - Home_Construction_and_Renovation
+  - Home_Decoration_and_Furniture
+  - Home_Essential_Utilities
+  - Home_Maintenance_and_Services
+  - Home_Products_and_Services
+  - Hospitals_and_Medical_Centers
+  - Laboratories
+  - Legal_Service
+  - Medicine
+  - Nightlife
+  - Office_Renovation
+  - Online_Computer_Courses_and_Training
+  - Outdoor_Decoration_and_Furniture_Dealers
+  - Parties_Special_Occasions_and_Wedding
+  - Personal_Care_and_Services
+  - Pet_and_Pets_Care
+  - Retail_Shopping
+  - Schools
+  - Sports
+  - Travel_Logistics_and_Transportation
+  - location
+  - contact
+
+slots:
+  Arts_and_Entertainment:
+    type: text
+    influence_conversation: false
+  Arts_and_Entertainment_count:
+    type: text
+    influence_conversation: false
+  dummy:
+    type: text
+    influence_conversation: false
+  data:
+    type: list
+    influence_conversation: false
+  Accommodation_Services:
+    type: text
+    influence_conversation: false
+  Accommodation_Services_count:
+    type: text
+    influence_conversation: false
+  Agricultural_Machinery_and_Supplies:
+    type: text
+    influence_conversation: false
+  Agricultural_Machinery_and_Supplies_count:
+    type: text
+    influence_conversation: false
+  Automotive:
+    type: text
+    influence_conversation: false
+  Automotive_count:
+    type: text
+    influence_conversation: false
+  B2B:
+    type: text
+    influence_conversation: false
+  B2B_count:
+    type: text
+    influence_conversation: false
+  Business_Services:
+    type: text
+    influence_conversation: false
+  Business_Services_count:
+    type: text
+    influence_conversation: false
+  City_Attractions:
+    type: text
+    influence_conversation: false
+  City_Attractions_count:
+    type: text
+    influence_conversation: false
+  Clinics_and_Doctors:
+    type: text
+    influence_conversation: false
+  Clinics_and_Doctors_count:
+    type: text
+    influence_conversation: false
+  Clothing_and_Accessories_Shops:
+    type: text
+    influence_conversation: false
+  Clothing_and_Accessories_Shops_count:
+    type: text
+    influence_conversation: false
+  Coaching_Tution_and_Training:
+    type: text
+    influence_conversation: false
+  Coaching_Tution_and_Training_count:
+    type: text
+    influence_conversation: false
+  Colleges_and_Universities:
+    type: text
+    influence_conversation: false
+  Colleges_and_Universities_count:
+    type: text
+    influence_conversation: false
+  Community_and_Social_Services:
+    type: text
+    influence_conversation: false
+  Community_and_Social_Services_count:
+    type: text
+    influence_conversation: false
+  Computer_Courses_and_Training:
+    type: text
+    influence_conversation: false
+  Computer_Courses_and_Training_count:
+    type: text
+    influence_conversation: false
+  Computers_and_Mobiles:
+    type: text
+    influence_conversation: false
+  Computers_and_Mobiles_count:
+    type: text
+    influence_conversation: false
+  Computers_and_Telecommunication_Services:
+    type: text
+    influence_conversation: false
+  Computers_and_Telecommunication_Services_count:
+    type: text
+    influence_conversation: false
+  Education_and_Training_Centres:
+    type: text
+    influence_conversation: false
+  Education_and_Training_Centres_count:
+    type: text
+    influence_conversation: false
+  Educational_Supplies_Dealers:
+    type: text
+    influence_conversation: false
+  Educational_Supplies_Dealers_count:
+    type: text
+    influence_conversation: false
+  Emergency_Services:
+    type: text
+    influence_conversation: false
+  Emergency_Services_count:
+    type: text
+    influence_conversation: false
+  Financial_Services:
+    type: text
+    influence_conversation: false
+  Financial_Services_count:
+    type: text
+    influence_conversation: false
+  Food_and_Dining:
+    type: text
+    influence_conversation: false
+  Food_and_Dining_count:
+    type: text
+    influence_conversation: false
+  Funerals_and_Memorials:
+    type: text
+    influence_conversation: false
+  Funerals_and_Memorials_count:
+    type: text
+    influence_conversation: false
+  Games_Centers:
+    type: text
+    influence_conversation: false
+  Games_Centers_count:
+    type: text
+    influence_conversation: false
+  Garden_and_Lawn:
+    type: text
+    influence_conversation: false
+  Garden_and_Lawn_count:
+    type: text
+    influence_conversation: false
+  Government_Offices:
+    type: text
+    influence_conversation: false
+  Government_Offices_count:
+    type: text
+    influence_conversation: false
+  Grocery:
+    type: text
+    influence_conversation: false
+  Grocery_count:
+    type: text
+    influence_conversation: false
+  Health_Services:
+    type: text
+    influence_conversation: false
+  Health_Services_count:
+    type: text
+    influence_conversation: false
+  Home_Accessories_and_Decors:
+    type: text
+    influence_conversation: false
+  Home_Accessories_and_Decors_count:
+    type: text
+    influence_conversation: false
+  Home_Construction_and_Renovation:
+    type: text
+    influence_conversation: false
+  Home_Construction_and_Renovation_count:
+    type: text
+    influence_conversation: false
+  Home_Decoration_and_Furniture:
+    type: text
+    influence_conversation: false
+  Home_Decoration_and_Furniture_count:
+    type: text
+    influence_conversation: false
+  Home_Essential_Utilities:
+    type: text
+    influence_conversation: false
+  Home_Essential_Utilities_count:
+    type: text
+    influence_conversation: false
+  Home_Maintenance_and_Services:
+    type: text
+    influence_conversation: false
+  Home_Maintenance_and_Services_count:
+    type: text
+    influence_conversation: false
+  Home_Products_and_Services:
+    type: text
+    influence_conversation: false
+  Home_Products_and_Services_count:
+    type: text
+    influence_conversation: false
+  Hospitals_and_Medical_Centers:
+    type: text
+    influence_conversation: false
+  Hospitals_and_Medical_Centers_count:
+    type: text
+    influence_conversation: false
+  Laboratories:
+    type: text
+    influence_conversation: false
+  Laboratories_count:
+    type: text
+    influence_conversation: false
+  Legal_Service:
+    type: text
+    influence_conversation: false
+  Legal_Service_count:
+    type: text
+    influence_conversation: false
+  Medicine:
+    type: text
+    influence_conversation: false
+  Medicine_count:
+    type: text
+    influence_conversation: false
+  Nightlife:
+    type: text
+    influence_conversation: false
+  Nightlife_count:
+    type: text
+    influence_conversation: false
+  Office_Renovation:
+    type: text
+    influence_conversation: false
+  Office_Renovation_count:
+    type: text
+    influence_conversation: false
+  Online_Computer_Courses_and_Training:
+    type: text
+    influence_conversation: false
+  Online_Computer_Courses_and_Training_count:
+    type: text
+    influence_conversation: false
+  Outdoor_Decoration_and_Furniture_Dealers:
+    type: text
+    influence_conversation: false
+  Outdoor_Decoration_and_Furniture_Dealers_count:
+    type: text
+    influence_conversation: false
+  Parties_Special_Occasions_and_Wedding:
+    type: text
+    influence_conversation: false
+  Parties_Special_Occasions_and_Wedding_count:
+    type: text
+    influence_conversation: false
+  Personal_Care_and_Services:
+    type: text
+    influence_conversation: false
+  Personal_Care_and_Services_count:
+    type: text
+    influence_conversation: false
+  Pet_and_Pets_Care:
+    type: text
+    influence_conversation: false
+  Pet_and_Pets_Care_count:
+    type: text
+    influence_conversation: false
+  Retail_Shopping:
+    type: text
+    influence_conversation: false
+  Retail_Shopping_count:
+    type: text
+    influence_conversation: false
+  Schools:
+    type: text
+    influence_conversation: false
+  Schools_count:
+    type: text
+    influence_conversation: false
+  Sports:
+    type: text
+    influence_conversation: false
+  Sports_count:
+    type: text
+    influence_conversation: false
+  Travel_Logistics_and_Transportation:
+    type: text
+    influence_conversation: false
+  Travel_Logistics_and_Transportation_count:
+    type: text
+    influence_conversation: false
+  location:
+    type: text
+    influence_conversation: false
+  contact:
+    type: text
+    influence_conversation: false
+  form_intent:
+    type: text
+    influence_conversation: false
+  slot0:
+    type: text
+    influence_conversation: false
+  slot1:
+    type: text
+    influence_conversation: false
+  slot2:
+    type: text
+    influence_conversation: false
+  slot3:
+    type: text
+    influence_conversation: false
+  slot4:
+    type: text
+    influence_conversation: false
+  slot5:
+    type: text
+    influence_conversation: false
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_location:
+  - text: "Please share the desired location"
+
+  utter_ask_contact:
+  - text: "Please enter your contact Number"
+
+actions:
+- action_AllInOne
+- action_ask_slot0
+- action_ask_slot1
+- action_ask_slot2
+- action_ask_slot3
+- action_ask_slot4
+- action_ask_slot5
+- action_submit
+- action_nlu_fallback
+
+
+forms:
+  Accommodation_Services_Hotel:
+      # required_slots:
+    slot0:
+    - type: from_text
+    slot1:
+    - type: from_text
+    slot2:
+    - type: from_text
+    slot3:
+    - type: from_text
+    slot4:
+    - type: from_text
+    location:
+    - type: from_text
+    contact:
+    - type: from_text
+
+
+  Accommodation_Services_Mens_Hostel:
+      # required_slots:
+    slot0:
+    - type: from_text
+    slot1:
+    - type: from_text
+    slot2:
+    - type: from_text
+    slot3:
+    - type: from_text
+    slot4:
+    - type: from_text
+    location:
+    - type: from_text
+    contact:
+    - type: from_text
+
+
+  Accommodation_Services_Kids_Hostels:
+      # required_slots:
+    slot0:
+    - type: from_text
+    slot1:
+    - type: from_text
+    slot2:
+    - type: from_text
+    slot3:
+    - type: from_text
+    slot4:
+    - type: from_text
+    location:
+    - type: from_text
+    contact:
+    - type: from_text
+
+  Accommodation_Services_Hotels:
+      # required_slots:
+    slot0:
+    - type: from_text
+    slot1:
+    - type: from_text
+    slot2:
+    - type: from_text
+    slot3:
+    - type: from_text
+    slot4:
+    - type: from_text
+    location:
+    - type: from_text
+    contact:
+    - type: from_text
+
+  Travel_Logistics_and_Transportation_Transport_Service:
+      # required_slots:
+    slot0:
+    - type: from_text
+    slot1:
+    - type: from_text
+    slot2:
+    - type: from_text
+    slot3:
+    - type: from_text
+    location:
+    - type: from_text
+    contact:
+    - type: from_text
+
+  Travel_Logistics_and_Transportation_Transport_Agency:
+      # required_slots:
+    slot0:
+    - type: from_text
+    slot1:
+    - type: from_text
+    slot2:
+    - type: from_text
+    slot3:
+    - type: from_text
+    location:
+    - type: from_text
+    contact:
+    - type: from_text
+
+
+  Accommodation_Services_Paying_Guests:
+      # required_slots:
+    slot0:
+    - type: from_text
+    slot1:
+    - type: from_text
+    slot2:
+    - type: from_text
+    slot3:
+    - type: from_text
+    slot4:
+    - type: from_text
+    location:
+    - type: from_text
+    contact:
+    - type: from_text
+
+
+  Accommodation_Services_Real_Estate:
+      # required_slots:
+    slot0:
+    - type: from_text
+    slot1:
+    - type: from_text
+    slot2:
+    - type: from_text
+    slot3:
+    - type: from_text
+    location:
+    - type: from_text
+    contact:
+    - type: from_text
+
+  general_form:
+      # required_slots:
+    location:
+    - type: from_text
+    contact:
+    - type: from_text
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

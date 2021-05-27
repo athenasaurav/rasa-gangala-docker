@@ -1,0 +1,159 @@
+version: "2.0"
+
+rules:
+
+
+- rule: Accommodation_Services Hotel
+  steps:
+  - intent: Accommodation_Services_Hotel
+  - action: Accommodation_Services_Hotel
+  - active_loop: Accommodation_Services_Hotel
+
+
+- rule: Submit form for location
+  condition:
+  - active_loop: Accommodation_Services_Hotel
+  steps:
+  - action: Accommodation_Services_Hotel
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_submit
+
+- rule: location
+  steps:
+  - intent: general_form
+  - action: general_form
+  - active_loop: general_form
+
+
+- rule: Submit form for location
+  condition:
+  - active_loop: general_form
+  steps:
+  - action: general_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_submit
+
+
+
+- rule: Travel_Logistics_and_Transportation_Transport_Agency
+  steps:
+  - intent: Travel_Logistics_and_Transportation_Transport_Agency
+  - action: Travel_Logistics_and_Transportation_Transport_Agency
+  - active_loop: Travel_Logistics_and_Transportation_Transport_Agency
+
+- rule: Travel_Logistics_and_Transportation_Transport_Agencysubmit
+  condition:
+  - active_loop: Travel_Logistics_and_Transportation_Transport_Agency
+  steps:
+  - action: Travel_Logistics_and_Transportation_Transport_Agency
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_submit
+
+- rule: Travel_Logistics_and_TransportationTransport_Service
+  steps:
+  - intent: Travel_Logistics_and_Transportation_Transport_Service
+  - action: Travel_Logistics_and_Transportation_Transport_Service
+  - active_loop: Travel_Logistics_and_Transportation_Transport_Service
+
+- rule: Travel_Logistics_and_TransportationTransport_Servicesubmit
+  condition:
+  - active_loop: Travel_Logistics_and_Transportation_Transport_Service
+  steps:
+  - action: Travel_Logistics_and_Transportation_Transport_Service
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_submit
+
+- rule: Accommodation_ServicesHotels_
+  steps:
+  - intent: Accommodation_Services_Hotels
+  - action: Accommodation_Services_Hotels
+  - active_loop: Accommodation_Services_Hotels
+
+- rule: Accommodation_ServicesHotels_submit
+  condition:
+  - active_loop: Accommodation_Services_Hotels
+  steps:
+  - action: Accommodation_Services_Hotels
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_submit
+
+- rule: Accommodation_ServicesKids_Hostels_
+  steps:
+  - intent: Accommodation_Services_Kids_Hostels
+  - action: Accommodation_Services_Kids_Hostels
+  - active_loop: Accommodation_Services_Kids_Hostels
+
+
+- rule: Accommodation_Services_Kids_Hostels_submit
+  condition:
+  - active_loop: Accommodation_Services_Kids_Hostels
+  steps:
+  - action: Accommodation_Services_Kids_Hostels
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_submit
+
+
+- rule: Accommodation_Services_Mens_Hostel_
+  steps:
+  - intent: Accommodation_Services_Mens_Hostel
+  - action: Accommodation_Services_Mens_Hostel
+  - active_loop: Accommodation_Services_Mens_Hostel
+
+
+- rule: Accommodation_Services_Mens_Hostel_submit
+  condition:
+  - active_loop: Accommodation_Services_Mens_Hostel
+  steps:
+  - action: Accommodation_Services_Mens_Hostel
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_submit
+
+
+- rule: Accommodation_Services_Paying_Guests
+  steps:
+  - intent: Accommodation_Services_Paying_Guests
+  - action: Accommodation_Services_Paying_Guests
+  - active_loop: Accommodation_Services_Paying_Guests
+
+
+- rule: Accommodation_Services_Paying_Guests_submit
+  condition:
+  - active_loop: Accommodation_Services_Paying_Guests
+  steps:
+  - action: Accommodation_Services_Paying_Guests
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_submit
+
+
+- rule: Accommodation_Services_Real_Estate_
+  steps:
+  - intent: Accommodation_Services_Real_Estate
+  - action: Accommodation_Services_Real_Estate
+  - active_loop: Accommodation_Services_Real_Estate
+
+
+- rule: Accommodation_Services_Real_Estate_submit
+  condition:
+  - active_loop: Accommodation_Services_Real_Estate
+  steps:
+  - action: Accommodation_Services_Real_Estate
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_submit
