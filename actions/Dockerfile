@@ -10,6 +10,7 @@ COPY actions.py /app
 COPY config.py /app
 COPY gpt.py /app
 COPY connector/MyIO.py /app
+COPY connector/1111.py /app
 COPY auction.py /app
 COPY data.json /app
 COPY read_excel.py /app
