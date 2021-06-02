@@ -9,10 +9,10 @@ import rasa.utils.endpoints
 from rasa.core.channels.channel import  InputChannel, CollectingOutputChannel, UserMessage
 import json
 
-class 1111Input(InputChannel):
+class sellerid1111Input(InputChannel):
     @classmethod
     def name(cls) -> Text:
-        return "1111"
+        return "sellerid1111"
 
     @staticmethod
     async def on_message_wrapper(
@@ -101,7 +101,7 @@ class 1111Input(InputChannel):
                     content_type="text/event-stream",
                 )
             else:
-                collector = 1111Output()
+                collector = sellerid1111Output()
                 # noinspection PyBroadException
                 try:
                     await on_new_message(
@@ -127,7 +127,7 @@ class 1111Input(InputChannel):
         return custom_webhook
 
 
-class 1111Output(CollectingOutputChannel):
+class sellerid1111Output(CollectingOutputChannel):
     @classmethod
     def name(cls) -> Text:
-        return "1111"
+        return "sellerid1111"
