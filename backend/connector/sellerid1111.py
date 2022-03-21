@@ -79,7 +79,11 @@ class sellerid1111Input(InputChannel):
         )
 
         # noinspection PyUnusedLocal
-        @custom_webhook.route("/", methods=["GET"])
+        @custom_webhook.route("/", methods=["GET", "HEAD"])
+        async def health(request: Request) -> HTTPResponse:
+            return response.json({"status": "ok"})
+        
+        @custom_webhook.route("/webhook", methods=["GET", "HEAD"])
         async def health(request: Request) -> HTTPResponse:
             return response.json({"status": "ok"})
 
